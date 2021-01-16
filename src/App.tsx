@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import SearchBar from './components/SearchBar';
+// import ImageList from './components/imageList';
+import logo from './logo.png';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    // const [images, setImages] = useState([]);
+
+    return (
+        <div className='ui container' style={{marginTop:'20px'}}>
+            <img src={logo} alt='pixabay-logo' className='pixabay-logo' />
+            <SearchBar  />
+        </div>
+    );
+};
 
 export default App;
